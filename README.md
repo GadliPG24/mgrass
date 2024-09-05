@@ -1,2 +1,2 @@
 # mgrass
-My GGrass Campain Site
+My GGrass Campaign Site
