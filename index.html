@@ -44,9 +44,12 @@
             font-size: 18px;
             cursor: pointer;
             border-radius: 5px;
+            background: linear-gradient(to right, #abf600 0%, #88d40b 50%, #4CAF50 100%);
+            background-size: 200% 100%;
+            transition: background-position 1s;
         }
         .cta button:hover {
-            background-color:  #4CAF50;
+            background-position: 100% 50%;
         }
         footer {
             background-color: #333;
@@ -60,6 +63,16 @@
         .footer-link {
             color: #4CAF50;
             text-decoration: none;
+        }
+
+        /* Keyframes for gradient animations */
+        @keyframes gradientForward {
+            0% { background-position: 0 50%; }
+            100% { background-position: 100% 50%; }
+        }
+        @keyframes gradientBackward {
+            0% { background-position: 100% 50%; }
+            100% { background-position: 0 50%; }
         }
     </style>
 </head>
